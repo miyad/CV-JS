@@ -42,7 +42,7 @@ console.log("hello world");
     });
 
 }(document, 'script', 'weatherwidget-io-js');*/
-fetch('http://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=Jhenaidah&appid=c1eae7b765f5d42bb32f09ec0ab4f232')
+fetch('https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?q=Jhenaidah&appid=c1eae7b765f5d42bb32f09ec0ab4f232')
     .then((response) => {
         return response.json();
     })
