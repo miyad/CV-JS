@@ -26,12 +26,20 @@
             </div>
             <div class=" mt-6 md:mt-8 flex-grow ml-2 md:ml-10">
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" id="locIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />                   
-                </svg> Jhenidah, Bangladesh
-                <a class="weatherwidget-io" href="https://forecast7.com/en/23d5589d18/jhenaidah/" data-label_1="JHENAIDAH" data-label_2="WEATHER" data-theme="original">JHENAIDAH WEATHER</a>
+                </svg>
+                <p class="" id="loc">Jhenaidah, Bangladesh </p>
+                <a class="hidden weatherwidget-io" href="https://forecast7.com/en/23d5589d18/jhenaidah/" data-label_1="JHENAIDAH" data-label_2="WEATHER" data-theme="original"></a>
+                <div class="bg-gray-100 p-4 mr-6 hidden" id="forecast">
+                    Weather: <span id="w"> </span>
+                    <br> Temparature: <span id="tmp"></span><sup>o</sup>C
 
+                    <br> Feels Like: <span id="fl"></span><sup>o</sup>C
+                    <br>
+                </div>
                 <br>
+
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -345,17 +353,7 @@
     </main>
     <script type="text/javascript " src="control.js ">
     </script>
-    <script>
-        ! function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://weatherwidget.io/js/widget.min.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, 'script', 'weatherwidget-io-js');
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
